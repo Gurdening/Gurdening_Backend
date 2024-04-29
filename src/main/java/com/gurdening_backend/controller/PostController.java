@@ -1,6 +1,10 @@
 package com.gurdening_backend.controller;
 
+import com.gurdening_backend.domain.Category;
+import com.gurdening_backend.domain.dto.PostDTO;
+import com.gurdening_backend.service.PostService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Slice;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,11 +12,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
 public class PostController {
+
     private final PostService postService;
 
     @GetMapping("post/{id}")

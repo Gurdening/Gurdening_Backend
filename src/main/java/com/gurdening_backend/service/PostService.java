@@ -1,7 +1,12 @@
 package com.gurdening_backend.service;
 
+import com.gurdening_backend.domain.Post;
+import com.gurdening_backend.domain.dto.PostDTO;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Slice;
 import org.springframework.stereotype.Service;
 
 @Service

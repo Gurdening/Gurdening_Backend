@@ -1,7 +1,7 @@
 package com.gurdening_backend.domain;
 
 public enum Category {
-    COOKING, // 요리
+    COOKING,// 요리
     DAILY_LIFE, // 일상생활
     CLEANLINESS, // 청결
     TREATMENT, // 치료
